@@ -18,9 +18,9 @@
         Bartender: [ 1, 2 ]
         Botanist: [ 3, 3 ]
         Chef: [ 2, 2 ]
-        Clown: [ 1, 2 ]
+        #Clown: [ 1, 2 ]
         Janitor: [ 3, 3 ]
-        Mime: [ 1, 2 ]
+        #Mime: [ 1, 2 ]
         Captain: [ 1, 1 ]
         IAA: [ 1, 1 ] # Corvax-IAA
         HeadOfPersonnel: [ 1, 1 ]
