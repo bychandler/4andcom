@@ -1,5 +1,5 @@
 ﻿- type: gameMap
-  id: Box
+  id: Chandler
   mapName: 'Chandler Station'
   mapPath: /Maps/Mars/ChandlerStationMAP.yml
   minPlayers: 1
