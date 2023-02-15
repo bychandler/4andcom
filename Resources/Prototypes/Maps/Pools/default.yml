@@ -1,12 +1,12 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-    - ChandlerStation
+    - Cluster
+#    - ChandlerStation
 #  - Aspid
 #  - Bagel
 #  - Barratry
 #  - Box
-#  - Cluster
 #  - Fland
 #  - Kettle
 #  - Marathon
