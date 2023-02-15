@@ -108,7 +108,7 @@ entities:
   - type: Followed
 - uid: 1
   components:
-  - name: Чандлер Station
+  - name: Chandler Station
     type: MetaData
   - rot: 0.46229100227355957 rad
     pos: -21.885155,2.110979
