@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
+using Content.Client.Corvax.Sponsors;
 using Content.Shared.CCVar;
+using Content.Shared.Corvax.Sponsors;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles;
 using Robust.Client;
@@ -18,6 +20,7 @@ public sealed class PlayTimeTrackingManager
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
 
@@ -57,6 +60,18 @@ public sealed class PlayTimeTrackingManager
     public bool IsAllowed(JobPrototype job, [NotNullWhen(false)] out string? reason)
     {
         reason = null;
+
+        var info = _sponsorsManager.TryGetInfo(out var sponsorInfo);
+        if (info && sponsorInfo != null)
+        {
+            if (sponsorInfo.AllowJob)
+                return true;
+
+            if (sponsorInfo.Tier == 3 && job.ID == "OfficerOON")
+            {
+                return true;
+            }
+        }
 
         if (job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))

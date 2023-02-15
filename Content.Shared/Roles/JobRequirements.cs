@@ -62,6 +62,12 @@ namespace Content.Shared.Roles
         [DataField("inverted")] public bool Inverted;
     }
 
+    [UsedImplicitly]
+    public sealed class SponsorLevelRequirement : JobRequirement
+    {
+        [DataField("level")] public int Level;
+    }
+
     public static class JobRequirements
     {
         public static bool TryRequirementsMet(
