@@ -2,9 +2,9 @@
   id: ChandlerStation
   mapName: 'Chandler Station'
   mapPath: /Maps/Mars/ChandlerStationMAP.yml
-  minPlayers: 1
+  minPlayers: 0
   stations:
-    Boxstation:
+    ChandlerStation:
       mapNameTemplate: '{0} Chandler Station {1}'
       emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml # Corvax-EmergencyShuttle
       nameGenerator:
