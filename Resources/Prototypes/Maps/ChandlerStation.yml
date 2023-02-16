@@ -1,11 +1,11 @@
 ﻿- type: gameMap
   id: ChandlerStation
   mapName: 'Chandler Station'
-  mapPath: /Maps/Mars/ChandlerStationMAP.yml
+  mapPath: /Maps/ChandlerStationMAP.yml
   minPlayers: 0
   maxPlayers: 100
   stations:
-    26913:
+    ChandlerStation:
       mapNameTemplate: '{0} Chandler Station {1}'
       emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml # Corvax-EmergencyShuttle
       nameGenerator:
@@ -21,7 +21,6 @@
         Chef: [ 2, 2 ]
         Janitor: [ 2, 2 ]
         Captain: [ 1, 1 ]
-        IAA: [ 1, 1 ] # Corvax-IAA
         HeadOfPersonnel: [ 1, 1 ]
         ChiefEngineer: [ 1, 1 ]
         StationEngineer: [ 4, 4 ]
@@ -32,9 +31,7 @@
         Scientist: [ 4, 4 ]
         HeadOfSecurity: [ 1, 1 ]
         SecurityOfficer: [ 4, 4 ]
-        Chaplain: [ 1, 1 ]
         Warden: [ 1, 1 ]
-        Librarian: [ 1, 1 ]
         Lawyer: [ 0, 0 ] # Corvax-IAA
         Quartermaster: [ 1, 1 ]
         SalvageSpecialist: [ 3, 3 ]
