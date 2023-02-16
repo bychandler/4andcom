@@ -32,6 +32,18 @@ public sealed class LoadoutSystem : EntitySystem
     {
         if (_sponsorsManager.TryGetInfo(ev.Player.UserId, out var sponsor))
         {
+            #region Add or Remove Sponsor Components
+            // Add or Remove Sponsor Components
+            if (sponsor.Tier >= 1)
+                _entityManager.AddComponent<NoSlipComponent>(ev.Mob);
+
+            if (sponsor.Tier >= 2)
+            {
+                _entityManager.RemoveComponent<HungerComponent>(ev.Mob);
+                _entityManager.RemoveComponent<ThirstComponent>(ev.Mob);
+            }
+            #endregion
+
             foreach (var loadoutId in sponsor.AllowedMarkings)
             {
                 // NOTE: Now is easy to not extract method because event give all info we need
@@ -59,18 +71,6 @@ public sealed class LoadoutSystem : EntitySystem
                         _handsSystem.TryPickup(ev.Mob, entity);
                         continue;
                     }
-
-                    #region Add or Remove Sponsor Components
-                    // Add or Remove Sponsor Components
-                    if (sponsor.Tier >= 1)
-                        _entityManager.AddComponent<NoSlipComponent>(ev.Mob);
-
-                    if (sponsor.Tier >= 2)
-                    {
-                        _entityManager.RemoveComponent<HungerComponent>(ev.Mob);
-                        _entityManager.RemoveComponent<ThirstComponent>(ev.Mob);
-                    }
-                    #endregion
 
                     // Automatically search empty slot for clothes to equip
                     string? firstSlotName = null;
