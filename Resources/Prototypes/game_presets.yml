@@ -19,16 +19,16 @@
   rules:
   - BasicStationEventScheduler
 
-#- type: gamePrese
-#  id: Secret
-#  alias:
-#    - secret
-#    - sekrit
-#  name: secret-title
-#  showInVote: false
-#  description: secret-description
-#  rules:
-#    - Secret
+- type: gamePrese
+  id: Secret
+  alias:
+    - secret
+    - sekrit
+  name: secret-title
+  showInVote: false
+  description: secret-description
+  rules:
+    - Secret
 
 - type: gamePreset
   id: Sandbox
@@ -41,16 +41,16 @@
   rules:
     - Sandbox
 
-#- type: gamePreset
-#  id: Traitor
-#  alias:
-#    - traitor
-#  name: traitor-title
-#  description: traitor-description
-#  showInVote: false
-#  rules:
-#    - Traitor
-#    - BasicStationEventScheduler
+- type: gamePreset
+  id: Traitor
+  alias:
+    - traitor
+  name: traitor-title
+  description: traitor-description
+  showInVote: false
+  rules:
+    - Traitor
+    - BasicStationEventScheduler
 
 #- type: gamePreset
 #  id: Suspicion
@@ -83,31 +83,31 @@
 #    - TraitorDeathMatch
 #    - MaxTimeRestart
 
-#- type: gamePreset
-#  id: Nukeops
-#  alias:
-#    - nukeops
-#  name: nukeops-title
-#  description: nukeops-description
-#  showInVote: false
-#  rules:
-#    - Nukeops
-#    - BasicStationEventScheduler
+- type: gamePreset
+ id: Nukeops
+  alias:
+    - nukeops
+  name: nukeops-title
+  description: nukeops-description
+  showInVote: false
+  rules:
+    - Nukeops
+    - BasicStationEventScheduler
 
-#- type: gamePreset
-#  id: Zombie
-#  alias:
-#    - zombie
-#    - zombies
-#    - Zombies
-#    - zz14
-#    - zomber
-#  name: zombie-title
-#  description: zombie-description
-#  showInVote: false
-#  rules:
-#    - Zombie
-#    - BasicStationEventScheduler
+- type: gamePreset
+  id: Zombie
+  alias:
+    - zombie
+    - zombies
+    - Zombies
+    - zz14
+    - zomber
+  name: zombie-title
+  description: zombie-description
+  showInVote: false
+  rules:
+    - Zombie
+    - BasicStationEventScheduler
 
 #- type: gamePreset
 #  id: Pirates

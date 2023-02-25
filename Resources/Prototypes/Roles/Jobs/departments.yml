@@ -14,15 +14,15 @@
   roles:
   - Bartender
   - Botanist
-#  - Chaplain
+  - Chaplain
   - Chef
-#  - Clown
+  - Clown
   - HeadOfPersonnel
   - Janitor
 #  - Lawyer # Corvax-IAA
-#  - Librarian
+  - Librarian
   - MedicalIntern
-#  - Mime
+  - Mime
   - Musician
   - Passenger
   - Reporter
