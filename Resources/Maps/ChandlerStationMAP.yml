@@ -107,8 +107,6 @@ entities:
   - type: OccluderTree
 - uid: 1
   components:
-  - id: ChandlerStation
-    type: BecomesStation
   - name: Space ship
     type: MetaData
   - pos: 0.31412715,0.13823697
@@ -4571,8 +4569,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 21.213781
-      - 79.80423
+      - 20.619795
+      - 77.56971
       - 0
       - 0
       - 0
@@ -4603,7 +4601,7 @@ entities:
   - type: RadiationGridResistance
   - joints:
       docking16862: !type:WeldJoint
-        bodyB: 5447
+        bodyB: 5460
         bodyA: 1
         id: docking16862
         localAnchorB: -0.5,-1
@@ -4611,7 +4609,7 @@ entities:
         damping: 206.1498
         stiffness: 1850.3962
       docking16861: !type:WeldJoint
-        bodyB: 5373
+        bodyB: 5386
         bodyA: 1
         id: docking16861
         localAnchorB: -0.5,-1
@@ -4619,7 +4617,7 @@ entities:
         damping: 385.78143
         stiffness: 3462.766
       docking16864: !type:WeldJoint
-        bodyB: 5212
+        bodyB: 5225
         bodyA: 1
         id: docking16864
         localAnchorB: 1.5,-1
@@ -4627,7 +4625,7 @@ entities:
         damping: 845.57043
         stiffness: 7589.8228
     type: Joint
-  - id: SHIP
+  - id: ChandlerStation
     type: BecomesStation
 - uid: 2
   type: WallReinforced
@@ -13374,7 +13372,7 @@ entities:
   - pos: -11.5,11.5
     parent: 1
     type: Transform
-  - SecondsUntilStateChange: -24525.457
+  - SecondsUntilStateChange: -24576.852
     state: Opening
     type: Door
   - inputs:
@@ -30833,7 +30831,7 @@ entities:
     parent: 1
     type: Transform
   - dockJointId: docking16861
-    dockedWith: 5427
+    dockedWith: 5440
     type: Docking
   - fixtures:
     - shape: !type:PolygonShape
@@ -30869,7 +30867,7 @@ entities:
     parent: 1
     type: Transform
   - dockJointId: docking16862
-    dockedWith: 5467
+    dockedWith: 5480
     type: Docking
   - fixtures:
     - shape: !type:PolygonShape
@@ -30905,7 +30903,7 @@ entities:
     parent: 1
     type: Transform
   - dockJointId: docking16864
-    dockedWith: 5213
+    dockedWith: 5226
     type: Docking
   - fixtures:
     - shape: !type:PolygonShape
@@ -38770,6 +38768,120 @@ entities:
     parent: 1
     type: Transform
 - uid: 5212
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 20.5,4.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5213
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 20.5,0.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5214
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 23.5,0.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5215
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 26.5,0.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5216
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 30.5,1.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5217
+  type: Poweredlight
+  components:
+  - pos: 26.5,7.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5218
+  type: Poweredlight
+  components:
+  - pos: 19.5,10.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5219
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 31.5,8.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5220
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 35.5,10.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5221
+  type: Poweredlight
+  components:
+  - pos: 35.5,15.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5222
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 37.5,17.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5223
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 38.5,18.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5224
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 41.5,12.5
+    parent: 1
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 5225
   components:
   - name: Serenity mk2
     type: MetaData
@@ -38944,7 +39056,7 @@ entities:
   - type: RadiationGridResistance
   - joints:
       docking16864: !type:WeldJoint
-        bodyB: 5212
+        bodyB: 5225
         bodyA: 1
         id: docking16864
         localAnchorB: 1.5,-1
@@ -38952,11 +39064,11 @@ entities:
         damping: 845.57043
         stiffness: 7589.8228
     type: Joint
-- uid: 5213
+- uid: 5226
   type: AirlockGlassShuttle
   components:
   - pos: 1.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - dockJointId: docking16864
     dockedWith: 4016
@@ -38987,1035 +39099,1035 @@ entities:
       hard: False
       id: docking
     type: Fixtures
-- uid: 5214
+- uid: 5227
   type: WallShuttleDiagonal
   components:
   - pos: -3.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5215
+- uid: 5228
   type: WallShuttleDiagonal
   components:
   - rot: -1.5707963267948966 rad
     pos: 6.5,9.5
-    parent: 5212
-    type: Transform
-- uid: 5216
-  type: WallShuttle
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -3.5,8.5
-    parent: 5212
-    type: Transform
-- uid: 5217
-  type: WallShuttle
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -3.5,7.5
-    parent: 5212
-    type: Transform
-- uid: 5218
-  type: WallShuttle
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -3.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5219
-  type: WallShuttleDiagonal
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -2.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5220
-  type: WallShuttle
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: 6.5,8.5
-    parent: 5212
-    type: Transform
-- uid: 5221
-  type: WallShuttle
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: 6.5,7.5
-    parent: 5212
-    type: Transform
-- uid: 5222
-  type: WallShuttleDiagonal
-  components:
-  - pos: 5.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5223
-  type: WallShuttle
-  components:
-  - pos: 6.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5224
-  type: WallShuttle
-  components:
-  - pos: 5.5,5.5
-    parent: 5212
-    type: Transform
-- uid: 5225
-  type: WallShuttle
-  components:
-  - pos: 4.5,5.5
-    parent: 5212
-    type: Transform
-- uid: 5226
-  type: WallShuttle
-  components:
-  - pos: 3.5,5.5
-    parent: 5212
-    type: Transform
-- uid: 5227
-  type: WallShuttle
-  components:
-  - pos: -2.5,5.5
-    parent: 5212
-    type: Transform
-- uid: 5228
-  type: WallShuttle
-  components:
-  - pos: -1.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
 - uid: 5229
   type: WallShuttle
   components:
-  - pos: -0.5,5.5
-    parent: 5212
+  - rot: -1.5707963267948966 rad
+    pos: -3.5,8.5
+    parent: 5225
     type: Transform
 - uid: 5230
-  type: ShuttleWindow
-  components:
-  - pos: -0.5,4.5
-    parent: 5212
-    type: Transform
-- uid: 5231
-  type: ShuttleWindow
-  components:
-  - pos: -0.5,3.5
-    parent: 5212
-    type: Transform
-- uid: 5232
-  type: ShuttleWindow
-  components:
-  - pos: 3.5,4.5
-    parent: 5212
-    type: Transform
-- uid: 5233
-  type: ShuttleWindow
-  components:
-  - pos: 3.5,3.5
-    parent: 5212
-    type: Transform
-- uid: 5234
-  type: WallShuttleDiagonal
-  components:
-  - pos: -1.5,2.5
-    parent: 5212
-    type: Transform
-- uid: 5235
   type: WallShuttle
   components:
-  - pos: -0.5,2.5
-    parent: 5212
+  - rot: -1.5707963267948966 rad
+    pos: -3.5,7.5
+    parent: 5225
+    type: Transform
+- uid: 5231
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -3.5,6.5
+    parent: 5225
+    type: Transform
+- uid: 5232
+  type: WallShuttleDiagonal
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -2.5,6.5
+    parent: 5225
+    type: Transform
+- uid: 5233
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 6.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5234
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 6.5,7.5
+    parent: 5225
+    type: Transform
+- uid: 5235
+  type: WallShuttleDiagonal
+  components:
+  - pos: 5.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5236
   type: WallShuttle
   components:
-  - pos: -1.5,1.5
-    parent: 5212
+  - pos: 6.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5237
   type: WallShuttle
   components:
-  - pos: -1.5,0.5
-    parent: 5212
+  - pos: 5.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5238
-  type: ShuttleWindow
+  type: WallShuttle
   components:
-  - pos: 0.5,10.5
-    parent: 5212
+  - pos: 4.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5239
-  type: Grille
+  type: WallShuttle
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -0.5,3.5
-    parent: 5212
+  - pos: 3.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5240
-  type: ShuttleWindow
+  type: WallShuttle
   components:
-  - pos: 0.5,9.5
-    parent: 5212
+  - pos: -2.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5241
-  type: ShuttleWindow
+  type: WallShuttle
   components:
-  - pos: 1.5,10.5
-    parent: 5212
+  - pos: -1.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5242
-  type: ShuttleWindow
+  type: WallShuttle
   components:
-  - pos: 2.5,10.5
-    parent: 5212
+  - pos: -0.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5243
   type: ShuttleWindow
   components:
-  - pos: 2.5,9.5
-    parent: 5212
+  - pos: -0.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5244
-  type: Grille
+  type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -0.5,4.5
-    parent: 5212
+  - pos: -0.5,3.5
+    parent: 5225
     type: Transform
 - uid: 5245
-  type: WallShuttle
+  type: ShuttleWindow
   components:
-  - pos: -0.5,8.5
-    parent: 5212
+  - pos: 3.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5246
-  type: WallShuttle
+  type: ShuttleWindow
   components:
-  - pos: -1.5,8.5
-    parent: 5212
+  - pos: 3.5,3.5
+    parent: 5225
     type: Transform
 - uid: 5247
-  type: WallShuttle
+  type: WallShuttleDiagonal
   components:
-  - pos: -2.5,8.5
-    parent: 5212
+  - pos: -1.5,2.5
+    parent: 5225
     type: Transform
 - uid: 5248
   type: WallShuttle
   components:
-  - pos: 3.5,8.5
-    parent: 5212
+  - pos: -0.5,2.5
+    parent: 5225
     type: Transform
 - uid: 5249
   type: WallShuttle
   components:
-  - pos: 4.5,8.5
-    parent: 5212
+  - pos: -1.5,1.5
+    parent: 5225
     type: Transform
 - uid: 5250
   type: WallShuttle
   components:
-  - pos: 5.5,8.5
-    parent: 5212
+  - pos: -1.5,0.5
+    parent: 5225
     type: Transform
 - uid: 5251
-  type: WallShuttle
+  type: ShuttleWindow
   components:
-  - pos: 3.5,2.5
-    parent: 5212
+  - pos: 0.5,10.5
+    parent: 5225
     type: Transform
 - uid: 5252
-  type: WallShuttle
+  type: Grille
   components:
-  - pos: 4.5,1.5
-    parent: 5212
+  - rot: -1.5707963267948966 rad
+    pos: -0.5,3.5
+    parent: 5225
     type: Transform
 - uid: 5253
-  type: WallShuttle
+  type: ShuttleWindow
   components:
-  - pos: 4.5,0.5
-    parent: 5212
+  - pos: 0.5,9.5
+    parent: 5225
     type: Transform
 - uid: 5254
-  type: WallShuttle
+  type: ShuttleWindow
   components:
-  - pos: -0.5,-0.5
-    parent: 5212
+  - pos: 1.5,10.5
+    parent: 5225
     type: Transform
 - uid: 5255
   type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: 2.5,-0.5
-    parent: 5212
+  - pos: 2.5,10.5
+    parent: 5225
     type: Transform
 - uid: 5256
   type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: 0.5,-0.5
-    parent: 5212
+  - pos: 2.5,9.5
+    parent: 5225
     type: Transform
 - uid: 5257
+  type: Grille
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -0.5,4.5
+    parent: 5225
+    type: Transform
+- uid: 5258
+  type: WallShuttle
+  components:
+  - pos: -0.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5259
+  type: WallShuttle
+  components:
+  - pos: -1.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5260
+  type: WallShuttle
+  components:
+  - pos: -2.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5261
+  type: WallShuttle
+  components:
+  - pos: 3.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5262
+  type: WallShuttle
+  components:
+  - pos: 4.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5263
+  type: WallShuttle
+  components:
+  - pos: 5.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5264
+  type: WallShuttle
+  components:
+  - pos: 3.5,2.5
+    parent: 5225
+    type: Transform
+- uid: 5265
+  type: WallShuttle
+  components:
+  - pos: 4.5,1.5
+    parent: 5225
+    type: Transform
+- uid: 5266
+  type: WallShuttle
+  components:
+  - pos: 4.5,0.5
+    parent: 5225
+    type: Transform
+- uid: 5267
+  type: WallShuttle
+  components:
+  - pos: -0.5,-0.5
+    parent: 5225
+    type: Transform
+- uid: 5268
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 2.5,-0.5
+    parent: 5225
+    type: Transform
+- uid: 5269
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 0.5,-0.5
+    parent: 5225
+    type: Transform
+- uid: 5270
   type: WallShuttle
   components:
   - pos: 3.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5258
+- uid: 5271
   type: WallShuttleDiagonal
   components:
   - rot: -1.5707963267948966 rad
     pos: -0.5,0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5259
+- uid: 5272
   type: WallShuttleDiagonal
   components:
   - pos: 3.5,0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5260
+- uid: 5273
   type: ChairPilotSeat
   components:
   - rot: 3.141592653589793 rad
     pos: 1.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5261
+- uid: 5274
   type: ChairPilotSeat
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5262
+- uid: 5275
   type: ChairPilotSeat
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,4.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5263
+- uid: 5276
   type: ChairPilotSeat
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,3.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5264
+- uid: 5277
   type: ChairPilotSeat
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,2.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5265
+- uid: 5278
   type: ChairPilotSeat
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5266
+- uid: 5279
   type: ChairPilotSeat
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,4.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5267
+- uid: 5280
   type: ChairPilotSeat
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,3.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5268
+- uid: 5281
   type: ChairPilotSeat
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,2.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5269
+- uid: 5282
   type: WallShuttleDiagonal
   components:
   - rot: -1.5707963267948966 rad
     pos: 4.5,2.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5270
+- uid: 5283
   type: Thruster
   components:
   - rot: 3.141592653589793 rad
     pos: -1.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5271
+- uid: 5284
   type: Thruster
   components:
   - rot: 3.141592653589793 rad
     pos: 4.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5272
+- uid: 5285
   type: Thruster
   components:
   - rot: 3.141592653589793 rad
     pos: -3.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5273
+- uid: 5286
   type: Thruster
   components:
   - rot: 3.141592653589793 rad
     pos: 6.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5274
+- uid: 5287
   type: Thruster
   components:
   - pos: -2.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5275
+- uid: 5288
   type: Thruster
   components:
   - pos: -1.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5276
+- uid: 5289
   type: Thruster
   components:
   - pos: 4.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5277
+- uid: 5290
   type: Thruster
   components:
   - pos: 5.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5278
+- uid: 5291
   type: Thruster
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,4.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5279
+- uid: 5292
   type: Thruster
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,3.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5280
+- uid: 5293
   type: Thruster
   components:
   - rot: -1.5707963267948966 rad
     pos: 4.5,4.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5281
+- uid: 5294
   type: Thruster
   components:
   - rot: -1.5707963267948966 rad
     pos: 4.5,3.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5282
+- uid: 5295
   type: Gyroscope
   components:
   - rot: -1.5707963267948966 rad
     pos: 5.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5283
+- uid: 5296
   type: GravityGeneratorMini
   components:
   - pos: -2.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5284
+- uid: 5297
   type: GeneratorUranium
   components:
   - pos: -1.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5285
+- uid: 5298
   type: GeneratorUranium
   components:
   - pos: 4.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5286
+- uid: 5299
   type: APCHyperCapacity
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,6.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5287
+- uid: 5300
   type: SubstationBasic
   components:
   - pos: -1.5,6.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5288
+- uid: 5301
   type: BannerNanotrasen
   components:
   - pos: 4.5,6.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5289
+- uid: 5302
   type: ComputerShuttle
   components:
   - pos: 1.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5290
+- uid: 5303
   type: WaterCooler
   components:
   - pos: 3.5,1.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5291
+- uid: 5304
   type: Table
   components:
   - pos: -0.5,1.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5292
+- uid: 5305
   type: DrinkMugGreen
   components:
   - pos: -0.6456518,1.6587372
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5293
+- uid: 5306
   type: DrinkMugMoebius
   components:
   - pos: -0.39565182,1.7993622
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5294
+- uid: 5307
   type: DrinkMugRed
   components:
   - pos: -0.47377682,1.4243622
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5295
+- uid: 5308
   type: DisposalUnit
   components:
   - pos: 0.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5296
+- uid: 5309
   type: ComputerIFFSyndicate
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5297
+- uid: 5310
   type: DisposalPipe
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5298
+- uid: 5311
   type: DisposalPipe
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5299
+- uid: 5312
   type: DisposalPipe
   components:
   - rot: 1.5707963267948966 rad
     pos: -2.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5300
+- uid: 5313
   type: DisposalPipe
   components:
   - rot: 1.5707963267948966 rad
     pos: -3.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5301
+- uid: 5314
   type: DisposalTrunk
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5302
+- uid: 5315
   type: CableHV
   components:
   - pos: -1.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5303
+- uid: 5316
   type: CableHV
   components:
   - pos: -1.5,6.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5304
+- uid: 5317
   type: CableHV
   components:
   - pos: -0.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5305
+- uid: 5318
   type: CableHV
   components:
   - pos: 0.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5306
+- uid: 5319
   type: CableHV
   components:
   - pos: 1.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5307
+- uid: 5320
   type: CableHV
   components:
   - pos: 2.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5308
+- uid: 5321
   type: CableHV
   components:
   - pos: 3.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5309
+- uid: 5322
   type: CableHV
   components:
   - pos: 4.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5310
+- uid: 5323
   type: CableMV
   components:
   - pos: -1.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5311
-  type: CableApcExtension
-  components:
-  - pos: -1.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5312
-  type: CableApcExtension
-  components:
-  - pos: -0.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5313
-  type: CableApcExtension
-  components:
-  - pos: 0.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5314
-  type: CableApcExtension
-  components:
-  - pos: 1.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5315
-  type: CableApcExtension
-  components:
-  - pos: 2.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5316
-  type: CableApcExtension
-  components:
-  - pos: 3.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5317
-  type: CableApcExtension
-  components:
-  - pos: 4.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5318
-  type: CableApcExtension
-  components:
-  - pos: 1.5,9.5
-    parent: 5212
-    type: Transform
-- uid: 5319
-  type: CableApcExtension
-  components:
-  - pos: 1.5,8.5
-    parent: 5212
-    type: Transform
-- uid: 5320
-  type: CableApcExtension
-  components:
-  - pos: 1.5,7.5
-    parent: 5212
-    type: Transform
-- uid: 5321
-  type: CableApcExtension
-  components:
-  - pos: 1.5,6.5
-    parent: 5212
-    type: Transform
-- uid: 5322
-  type: CableApcExtension
-  components:
-  - pos: 1.5,5.5
-    parent: 5212
-    type: Transform
-- uid: 5323
-  type: CableApcExtension
-  components:
-  - pos: 1.5,4.5
-    parent: 5212
+    parent: 5225
     type: Transform
 - uid: 5324
   type: CableApcExtension
   components:
-  - pos: 1.5,3.5
-    parent: 5212
+  - pos: -1.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5325
   type: CableApcExtension
   components:
-  - pos: 1.5,2.5
-    parent: 5212
+  - pos: -0.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5326
   type: CableApcExtension
   components:
-  - pos: 1.5,1.5
-    parent: 5212
+  - pos: 0.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5327
   type: CableApcExtension
   components:
-  - pos: 1.5,0.5
-    parent: 5212
+  - pos: 1.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5328
   type: CableApcExtension
   components:
-  - pos: 0.5,1.5
-    parent: 5212
+  - pos: 2.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5329
   type: CableApcExtension
   components:
-  - pos: -0.5,1.5
-    parent: 5212
+  - pos: 3.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5330
   type: CableApcExtension
   components:
-  - pos: 2.5,1.5
-    parent: 5212
+  - pos: 4.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5331
   type: CableApcExtension
   components:
-  - pos: 3.5,1.5
-    parent: 5212
+  - pos: 1.5,9.5
+    parent: 5225
     type: Transform
 - uid: 5332
   type: CableApcExtension
   components:
-  - pos: -1.5,4.5
-    parent: 5212
+  - pos: 1.5,8.5
+    parent: 5225
     type: Transform
 - uid: 5333
   type: CableApcExtension
   components:
-  - pos: -0.5,4.5
-    parent: 5212
+  - pos: 1.5,7.5
+    parent: 5225
     type: Transform
 - uid: 5334
   type: CableApcExtension
   components:
-  - pos: 0.5,4.5
-    parent: 5212
+  - pos: 1.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5335
   type: CableApcExtension
   components:
-  - pos: 2.5,4.5
-    parent: 5212
+  - pos: 1.5,5.5
+    parent: 5225
     type: Transform
 - uid: 5336
   type: CableApcExtension
   components:
-  - pos: 3.5,4.5
-    parent: 5212
+  - pos: 1.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5337
   type: CableApcExtension
   components:
-  - pos: 4.5,4.5
-    parent: 5212
+  - pos: 1.5,3.5
+    parent: 5225
     type: Transform
 - uid: 5338
   type: CableApcExtension
   components:
-  - pos: -2.5,6.5
-    parent: 5212
+  - pos: 1.5,2.5
+    parent: 5225
     type: Transform
 - uid: 5339
   type: CableApcExtension
   components:
-  - pos: -3.5,6.5
-    parent: 5212
+  - pos: 1.5,1.5
+    parent: 5225
     type: Transform
 - uid: 5340
   type: CableApcExtension
   components:
-  - pos: -3.5,5.5
-    parent: 5212
+  - pos: 1.5,0.5
+    parent: 5225
     type: Transform
 - uid: 5341
   type: CableApcExtension
   components:
-  - pos: 5.5,6.5
-    parent: 5212
+  - pos: 0.5,1.5
+    parent: 5225
     type: Transform
 - uid: 5342
   type: CableApcExtension
   components:
-  - pos: 6.5,6.5
-    parent: 5212
+  - pos: -0.5,1.5
+    parent: 5225
     type: Transform
 - uid: 5343
   type: CableApcExtension
   components:
-  - pos: 6.5,5.5
-    parent: 5212
+  - pos: 2.5,1.5
+    parent: 5225
     type: Transform
 - uid: 5344
   type: CableApcExtension
   components:
-  - pos: 4.5,7.5
-    parent: 5212
+  - pos: 3.5,1.5
+    parent: 5225
     type: Transform
 - uid: 5345
   type: CableApcExtension
   components:
-  - pos: 4.5,8.5
-    parent: 5212
+  - pos: -1.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5346
   type: CableApcExtension
   components:
-  - pos: -1.5,7.5
-    parent: 5212
+  - pos: -0.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5347
   type: CableApcExtension
   components:
-  - pos: -1.5,8.5
-    parent: 5212
+  - pos: 0.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5348
   type: CableApcExtension
   components:
-  - pos: -0.5,0.5
-    parent: 5212
+  - pos: 2.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5349
   type: CableApcExtension
   components:
-  - pos: -1.5,0.5
-    parent: 5212
+  - pos: 3.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5350
   type: CableApcExtension
   components:
-  - pos: 3.5,0.5
-    parent: 5212
+  - pos: 4.5,4.5
+    parent: 5225
     type: Transform
 - uid: 5351
   type: CableApcExtension
   components:
-  - pos: 4.5,0.5
-    parent: 5212
+  - pos: -2.5,6.5
+    parent: 5225
     type: Transform
 - uid: 5352
+  type: CableApcExtension
+  components:
+  - pos: -3.5,6.5
+    parent: 5225
+    type: Transform
+- uid: 5353
+  type: CableApcExtension
+  components:
+  - pos: -3.5,5.5
+    parent: 5225
+    type: Transform
+- uid: 5354
+  type: CableApcExtension
+  components:
+  - pos: 5.5,6.5
+    parent: 5225
+    type: Transform
+- uid: 5355
+  type: CableApcExtension
+  components:
+  - pos: 6.5,6.5
+    parent: 5225
+    type: Transform
+- uid: 5356
+  type: CableApcExtension
+  components:
+  - pos: 6.5,5.5
+    parent: 5225
+    type: Transform
+- uid: 5357
+  type: CableApcExtension
+  components:
+  - pos: 4.5,7.5
+    parent: 5225
+    type: Transform
+- uid: 5358
+  type: CableApcExtension
+  components:
+  - pos: 4.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5359
+  type: CableApcExtension
+  components:
+  - pos: -1.5,7.5
+    parent: 5225
+    type: Transform
+- uid: 5360
+  type: CableApcExtension
+  components:
+  - pos: -1.5,8.5
+    parent: 5225
+    type: Transform
+- uid: 5361
+  type: CableApcExtension
+  components:
+  - pos: -0.5,0.5
+    parent: 5225
+    type: Transform
+- uid: 5362
+  type: CableApcExtension
+  components:
+  - pos: -1.5,0.5
+    parent: 5225
+    type: Transform
+- uid: 5363
+  type: CableApcExtension
+  components:
+  - pos: 3.5,0.5
+    parent: 5225
+    type: Transform
+- uid: 5364
+  type: CableApcExtension
+  components:
+  - pos: 4.5,0.5
+    parent: 5225
+    type: Transform
+- uid: 5365
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5353
+- uid: 5366
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5354
+- uid: 5367
   type: WallShuttleDiagonal
   components:
   - pos: -0.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5355
+- uid: 5368
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5356
+- uid: 5369
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,10.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5357
+- uid: 5370
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,10.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5358
+- uid: 5371
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,10.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5359
+- uid: 5372
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5360
+- uid: 5373
   type: WallShuttleDiagonal
   components:
   - rot: -1.5707963267948966 rad
     pos: 3.5,9.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5361
+- uid: 5374
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 3.5,4.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5362
+- uid: 5375
   type: Grille
   components:
   - rot: -1.5707963267948966 rad
     pos: 3.5,3.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5363
+- uid: 5376
   type: AtmosDeviceFanTiny
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,-0.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5364
+- uid: 5377
   type: Poweredlight
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5365
+- uid: 5378
   type: Poweredlight
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5366
+- uid: 5379
   type: Poweredlight
   components:
   - rot: 3.141592653589793 rad
     pos: 0.5,0.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5367
+- uid: 5380
   type: Poweredlight
   components:
   - rot: 3.141592653589793 rad
     pos: 2.5,0.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5368
+- uid: 5381
   type: Poweredlight
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5369
+- uid: 5382
   type: Poweredlight
   components:
   - rot: -1.5707963267948966 rad
     pos: 2.5,8.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5370
+- uid: 5383
   type: Poweredlight
   components:
   - rot: 1.5707963267948966 rad
     pos: -2.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5371
+- uid: 5384
   type: Poweredlight
   components:
   - rot: -1.5707963267948966 rad
     pos: 5.5,7.5
-    parent: 5212
+    parent: 5225
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5372
+- uid: 5385
   type: ExtinguisherCabinetFilled
   components:
   - rot: -1.5707963267948966 rad
     pos: 3.5,5.5
-    parent: 5212
+    parent: 5225
     type: Transform
-- uid: 5373
+- uid: 5386
   components:
   - name: SSE-01
     type: MetaData
@@ -40141,7 +40253,7 @@ entities:
   - type: RadiationGridResistance
   - joints:
       docking16861: !type:WeldJoint
-        bodyB: 5373
+        bodyB: 5386
         bodyA: 1
         id: docking16861
         localAnchorB: -0.5,-1
@@ -40149,357 +40261,357 @@ entities:
         damping: 385.78143
         stiffness: 3462.766
     type: Joint
-- uid: 5374
+- uid: 5387
   type: Gyroscope
   components:
   - pos: -1.5,2.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5375
+- uid: 5388
   type: ComputerShuttle
   components:
   - pos: -0.5,6.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5376
+- uid: 5389
   type: ChairPilotSeat
   components:
   - rot: 3.141592653589793 rad
     pos: -0.5,5.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5377
+- uid: 5390
   type: ComputerIFFSyndicate
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,5.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5378
+- uid: 5391
   type: ComputerRadar
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,5.5
-    parent: 5373
-    type: Transform
-- uid: 5379
-  type: ShuttleWindow
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -1.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5380
-  type: ShuttleWindow
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -1.5,7.5
-    parent: 5373
-    type: Transform
-- uid: 5381
-  type: ShuttleWindow
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -0.5,7.5
-    parent: 5373
-    type: Transform
-- uid: 5382
-  type: ShuttleWindow
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: 0.5,7.5
-    parent: 5373
-    type: Transform
-- uid: 5383
-  type: ShuttleWindow
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: 0.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5384
-  type: WallShuttleDiagonal
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 1.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5385
-  type: WallShuttle
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 1.5,5.5
-    parent: 5373
-    type: Transform
-- uid: 5386
-  type: WallShuttleDiagonal
-  components:
-  - pos: -2.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5387
-  type: WallShuttle
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -2.5,5.5
-    parent: 5373
-    type: Transform
-- uid: 5388
-  type: ShuttleWindow
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -2.5,4.5
-    parent: 5373
-    type: Transform
-- uid: 5389
-  type: ShuttleWindow
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 1.5,4.5
-    parent: 5373
-    type: Transform
-- uid: 5390
-  type: ShuttleWindow
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -2.5,3.5
-    parent: 5373
-    type: Transform
-- uid: 5391
-  type: ShuttleWindow
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 1.5,3.5
-    parent: 5373
+    parent: 5386
     type: Transform
 - uid: 5392
   type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -1.5,-0.5
-    parent: 5373
+  - rot: 1.5707963267948966 rad
+    pos: -1.5,6.5
+    parent: 5386
     type: Transform
 - uid: 5393
   type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: 0.5,-0.5
-    parent: 5373
+  - rot: 1.5707963267948966 rad
+    pos: -1.5,7.5
+    parent: 5386
     type: Transform
 - uid: 5394
-  type: WallShuttleDiagonal
+  type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -1.5,0.5
-    parent: 5373
+  - rot: 1.5707963267948966 rad
+    pos: -0.5,7.5
+    parent: 5386
     type: Transform
 - uid: 5395
-  type: WallShuttleDiagonal
+  type: ShuttleWindow
   components:
-  - pos: 0.5,0.5
-    parent: 5373
+  - rot: 1.5707963267948966 rad
+    pos: 0.5,7.5
+    parent: 5386
     type: Transform
 - uid: 5396
-  type: WallShuttle
+  type: ShuttleWindow
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -2.5,0.5
-    parent: 5373
+  - rot: 1.5707963267948966 rad
+    pos: 0.5,6.5
+    parent: 5386
     type: Transform
 - uid: 5397
-  type: WallShuttle
+  type: WallShuttleDiagonal
   components:
   - rot: -1.5707963267948966 rad
-    pos: -2.5,1.5
-    parent: 5373
+    pos: 1.5,6.5
+    parent: 5386
     type: Transform
 - uid: 5398
   type: WallShuttle
   components:
   - rot: -1.5707963267948966 rad
-    pos: 1.5,1.5
-    parent: 5373
+    pos: 1.5,5.5
+    parent: 5386
     type: Transform
 - uid: 5399
-  type: WallShuttle
+  type: WallShuttleDiagonal
   components:
-  - rot: -1.5707963267948966 rad
-    pos: 1.5,0.5
-    parent: 5373
+  - pos: -2.5,6.5
+    parent: 5386
     type: Transform
 - uid: 5400
   type: WallShuttle
   components:
   - rot: -1.5707963267948966 rad
-    pos: -2.5,2.5
-    parent: 5373
+    pos: -2.5,5.5
+    parent: 5386
     type: Transform
 - uid: 5401
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -2.5,4.5
+    parent: 5386
+    type: Transform
+- uid: 5402
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 1.5,4.5
+    parent: 5386
+    type: Transform
+- uid: 5403
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -2.5,3.5
+    parent: 5386
+    type: Transform
+- uid: 5404
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 1.5,3.5
+    parent: 5386
+    type: Transform
+- uid: 5405
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -1.5,-0.5
+    parent: 5386
+    type: Transform
+- uid: 5406
+  type: ShuttleWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 0.5,-0.5
+    parent: 5386
+    type: Transform
+- uid: 5407
+  type: WallShuttleDiagonal
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -1.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5408
+  type: WallShuttleDiagonal
+  components:
+  - pos: 0.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5409
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -2.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5410
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -2.5,1.5
+    parent: 5386
+    type: Transform
+- uid: 5411
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 1.5,1.5
+    parent: 5386
+    type: Transform
+- uid: 5412
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 1.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5413
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -2.5,2.5
+    parent: 5386
+    type: Transform
+- uid: 5414
   type: WallShuttle
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,2.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5402
+- uid: 5415
   type: ChairPilotSeat
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,4.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5403
+- uid: 5416
   type: ChairPilotSeat
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,3.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5404
+- uid: 5417
   type: ChairPilotSeat
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,4.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5405
+- uid: 5418
   type: ChairPilotSeat
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,3.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5406
+- uid: 5419
   type: GeneratorUranium
   components:
   - pos: 0.5,1.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5407
+- uid: 5420
   type: GravityGeneratorMini
   components:
   - pos: 0.5,2.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5408
+- uid: 5421
   type: SubstationBasic
   components:
   - pos: -1.5,1.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5409
+- uid: 5422
   type: APCHyperCapacity
   components:
   - pos: -1.5,1.5
-    parent: 5373
-    type: Transform
-- uid: 5410
-  type: CableApcExtension
-  components:
-  - pos: -1.5,1.5
-    parent: 5373
-    type: Transform
-- uid: 5411
-  type: CableApcExtension
-  components:
-  - pos: -0.5,1.5
-    parent: 5373
-    type: Transform
-- uid: 5412
-  type: CableApcExtension
-  components:
-  - pos: 0.5,1.5
-    parent: 5373
-    type: Transform
-- uid: 5413
-  type: CableApcExtension
-  components:
-  - pos: -1.5,2.5
-    parent: 5373
-    type: Transform
-- uid: 5414
-  type: CableApcExtension
-  components:
-  - pos: -1.5,3.5
-    parent: 5373
-    type: Transform
-- uid: 5415
-  type: CableApcExtension
-  components:
-  - pos: -1.5,4.5
-    parent: 5373
-    type: Transform
-- uid: 5416
-  type: CableApcExtension
-  components:
-  - pos: -1.5,5.5
-    parent: 5373
-    type: Transform
-- uid: 5417
-  type: CableApcExtension
-  components:
-  - pos: -1.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5418
-  type: CableApcExtension
-  components:
-  - pos: -0.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5419
-  type: CableApcExtension
-  components:
-  - pos: 0.5,6.5
-    parent: 5373
-    type: Transform
-- uid: 5420
-  type: CableApcExtension
-  components:
-  - pos: 0.5,5.5
-    parent: 5373
-    type: Transform
-- uid: 5421
-  type: CableApcExtension
-  components:
-  - pos: 0.5,4.5
-    parent: 5373
-    type: Transform
-- uid: 5422
-  type: CableApcExtension
-  components:
-  - pos: 0.5,3.5
-    parent: 5373
+    parent: 5386
     type: Transform
 - uid: 5423
   type: CableApcExtension
   components:
-  - pos: 0.5,2.5
-    parent: 5373
+  - pos: -1.5,1.5
+    parent: 5386
     type: Transform
 - uid: 5424
   type: CableApcExtension
   components:
-  - pos: -0.5,0.5
-    parent: 5373
+  - pos: -0.5,1.5
+    parent: 5386
     type: Transform
 - uid: 5425
   type: CableApcExtension
   components:
-  - pos: -1.5,0.5
-    parent: 5373
+  - pos: 0.5,1.5
+    parent: 5386
     type: Transform
 - uid: 5426
   type: CableApcExtension
   components:
-  - pos: 0.5,0.5
-    parent: 5373
+  - pos: -1.5,2.5
+    parent: 5386
     type: Transform
 - uid: 5427
+  type: CableApcExtension
+  components:
+  - pos: -1.5,3.5
+    parent: 5386
+    type: Transform
+- uid: 5428
+  type: CableApcExtension
+  components:
+  - pos: -1.5,4.5
+    parent: 5386
+    type: Transform
+- uid: 5429
+  type: CableApcExtension
+  components:
+  - pos: -1.5,5.5
+    parent: 5386
+    type: Transform
+- uid: 5430
+  type: CableApcExtension
+  components:
+  - pos: -1.5,6.5
+    parent: 5386
+    type: Transform
+- uid: 5431
+  type: CableApcExtension
+  components:
+  - pos: -0.5,6.5
+    parent: 5386
+    type: Transform
+- uid: 5432
+  type: CableApcExtension
+  components:
+  - pos: 0.5,6.5
+    parent: 5386
+    type: Transform
+- uid: 5433
+  type: CableApcExtension
+  components:
+  - pos: 0.5,5.5
+    parent: 5386
+    type: Transform
+- uid: 5434
+  type: CableApcExtension
+  components:
+  - pos: 0.5,4.5
+    parent: 5386
+    type: Transform
+- uid: 5435
+  type: CableApcExtension
+  components:
+  - pos: 0.5,3.5
+    parent: 5386
+    type: Transform
+- uid: 5436
+  type: CableApcExtension
+  components:
+  - pos: 0.5,2.5
+    parent: 5386
+    type: Transform
+- uid: 5437
+  type: CableApcExtension
+  components:
+  - pos: -0.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5438
+  type: CableApcExtension
+  components:
+  - pos: -1.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5439
+  type: CableApcExtension
+  components:
+  - pos: 0.5,0.5
+    parent: 5386
+    type: Transform
+- uid: 5440
   type: AirlockGlassShuttle
   components:
   - pos: -0.5,-0.5
-    parent: 5373
+    parent: 5386
     type: Transform
   - dockJointId: docking16861
     dockedWith: 4014
@@ -40530,147 +40642,147 @@ entities:
       hard: False
       id: docking
     type: Fixtures
-- uid: 5428
+- uid: 5441
   type: Thruster
   components:
   - rot: 3.141592653589793 rad
     pos: -2.5,-0.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5429
+- uid: 5442
   type: Thruster
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,-0.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5430
+- uid: 5443
   type: Thruster
   components:
   - rot: 1.5707963267948966 rad
     pos: -2.5,7.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5431
+- uid: 5444
   type: Thruster
   components:
   - pos: 1.5,7.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5432
+- uid: 5445
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,6.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5433
+- uid: 5446
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,7.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5434
+- uid: 5447
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,7.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5435
+- uid: 5448
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,7.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5436
+- uid: 5449
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,6.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5437
+- uid: 5450
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -2.5,4.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5438
+- uid: 5451
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -2.5,3.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5439
+- uid: 5452
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,4.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5440
+- uid: 5453
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,3.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5441
+- uid: 5454
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,-0.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5442
+- uid: 5455
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,-0.5
-    parent: 5373
+    parent: 5386
     type: Transform
-- uid: 5443
+- uid: 5456
   type: Poweredlight
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,5.5
-    parent: 5373
+    parent: 5386
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5444
+- uid: 5457
   type: Poweredlight
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,5.5
-    parent: 5373
+    parent: 5386
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5445
+- uid: 5458
   type: Poweredlight
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,1.5
-    parent: 5373
+    parent: 5386
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5446
+- uid: 5459
   type: Poweredlight
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,1.5
-    parent: 5373
+    parent: 5386
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5447
+- uid: 5460
   components:
   - name: SSE-02
     type: MetaData
@@ -40770,7 +40882,7 @@ entities:
   - type: RadiationGridResistance
   - joints:
       docking16862: !type:WeldJoint
-        bodyB: 5447
+        bodyB: 5460
         bodyA: 1
         id: docking16862
         localAnchorB: -0.5,-1
@@ -40778,139 +40890,139 @@ entities:
         damping: 206.1498
         stiffness: 1850.3962
     type: Joint
-- uid: 5448
+- uid: 5461
   type: ComputerShuttle
   components:
   - pos: -0.5,3.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5449
+- uid: 5462
   type: ChairPilotSeat
   components:
   - rot: 3.141592653589793 rad
     pos: -0.5,2.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5450
+- uid: 5463
   type: WallShuttle
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5451
+- uid: 5464
   type: Gyroscope
   components:
   - pos: 0.5,0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5452
+- uid: 5465
   type: ComputerIFFSyndicate
   components:
   - pos: 0.5,3.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5453
+- uid: 5466
   type: GravityGeneratorMini
   components:
   - pos: 0.5,2.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5454
+- uid: 5467
   type: GeneratorUranium
   components:
   - pos: 0.5,1.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5455
+- uid: 5468
   type: APCHyperCapacity
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,1.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5456
+- uid: 5469
   type: SubstationWallBasic
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5457
+- uid: 5470
   type: WallShuttle
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,1.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5458
+- uid: 5471
   type: WallShuttle
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,1.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5459
+- uid: 5472
   type: WallShuttle
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5460
+- uid: 5473
   type: WallShuttle
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,-0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5461
+- uid: 5474
   type: ShuttleWindow
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,4.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5462
+- uid: 5475
   type: ShuttleWindow
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,3.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5463
+- uid: 5476
   type: ShuttleWindow
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,4.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5464
+- uid: 5477
   type: ShuttleWindow
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,3.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5465
+- uid: 5478
   type: ShuttleWindow
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,2.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5466
+- uid: 5479
   type: ShuttleWindow
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,2.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5467
+- uid: 5480
   type: AirlockGlassShuttle
   components:
   - pos: -0.5,-0.5
-    parent: 5447
+    parent: 5460
     type: Transform
   - dockJointId: docking16862
     dockedWith: 4015
@@ -40941,172 +41053,172 @@ entities:
       hard: False
       id: docking
     type: Fixtures
-- uid: 5468
+- uid: 5481
   type: Thruster
   components:
   - pos: -1.5,4.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5469
+- uid: 5482
   type: Thruster
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,4.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5470
+- uid: 5483
   type: Thruster
   components:
   - rot: 3.141592653589793 rad
     pos: 1.5,-0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5471
+- uid: 5484
   type: Thruster
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,-0.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5472
+- uid: 5485
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,3.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5473
+- uid: 5486
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,2.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5474
+- uid: 5487
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,4.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5475
+- uid: 5488
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 0.5,4.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5476
+- uid: 5489
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,3.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5477
+- uid: 5490
   type: Grille
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,2.5
-    parent: 5447
+    parent: 5460
     type: Transform
-- uid: 5478
+- uid: 5491
   type: Poweredlight
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,1.5
-    parent: 5447
+    parent: 5460
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 5479
+- uid: 5492
   type: CableApcExtension
   components:
   - pos: -0.5,3.5
-    parent: 5447
-    type: Transform
-- uid: 5480
-  type: CableApcExtension
-  components:
-  - pos: -0.5,2.5
-    parent: 5447
-    type: Transform
-- uid: 5481
-  type: CableApcExtension
-  components:
-  - pos: -0.5,1.5
-    parent: 5447
-    type: Transform
-- uid: 5482
-  type: CableApcExtension
-  components:
-  - pos: -0.5,0.5
-    parent: 5447
-    type: Transform
-- uid: 5483
-  type: CableApcExtension
-  components:
-  - pos: 0.5,3.5
-    parent: 5447
-    type: Transform
-- uid: 5484
-  type: CableApcExtension
-  components:
-  - pos: 0.5,2.5
-    parent: 5447
-    type: Transform
-- uid: 5485
-  type: CableApcExtension
-  components:
-  - pos: 0.5,1.5
-    parent: 5447
-    type: Transform
-- uid: 5486
-  type: CableApcExtension
-  components:
-  - pos: 0.5,0.5
-    parent: 5447
-    type: Transform
-- uid: 5487
-  type: CableHV
-  components:
-  - pos: 0.5,1.5
-    parent: 5447
-    type: Transform
-- uid: 5488
-  type: CableHV
-  components:
-  - pos: -0.5,1.5
-    parent: 5447
-    type: Transform
-- uid: 5489
-  type: CableHV
-  components:
-  - pos: -0.5,0.5
-    parent: 5447
-    type: Transform
-- uid: 5490
-  type: CableHV
-  components:
-  - pos: -1.5,0.5
-    parent: 5447
-    type: Transform
-- uid: 5491
-  type: CableMV
-  components:
-  - pos: -1.5,1.5
-    parent: 5447
-    type: Transform
-- uid: 5492
-  type: CableMV
-  components:
-  - pos: -1.5,0.5
-    parent: 5447
+    parent: 5460
     type: Transform
 - uid: 5493
   type: CableApcExtension
   components:
+  - pos: -0.5,2.5
+    parent: 5460
+    type: Transform
+- uid: 5494
+  type: CableApcExtension
+  components:
+  - pos: -0.5,1.5
+    parent: 5460
+    type: Transform
+- uid: 5495
+  type: CableApcExtension
+  components:
+  - pos: -0.5,0.5
+    parent: 5460
+    type: Transform
+- uid: 5496
+  type: CableApcExtension
+  components:
+  - pos: 0.5,3.5
+    parent: 5460
+    type: Transform
+- uid: 5497
+  type: CableApcExtension
+  components:
+  - pos: 0.5,2.5
+    parent: 5460
+    type: Transform
+- uid: 5498
+  type: CableApcExtension
+  components:
+  - pos: 0.5,1.5
+    parent: 5460
+    type: Transform
+- uid: 5499
+  type: CableApcExtension
+  components:
+  - pos: 0.5,0.5
+    parent: 5460
+    type: Transform
+- uid: 5500
+  type: CableHV
+  components:
+  - pos: 0.5,1.5
+    parent: 5460
+    type: Transform
+- uid: 5501
+  type: CableHV
+  components:
+  - pos: -0.5,1.5
+    parent: 5460
+    type: Transform
+- uid: 5502
+  type: CableHV
+  components:
+  - pos: -0.5,0.5
+    parent: 5460
+    type: Transform
+- uid: 5503
+  type: CableHV
+  components:
+  - pos: -1.5,0.5
+    parent: 5460
+    type: Transform
+- uid: 5504
+  type: CableMV
+  components:
   - pos: -1.5,1.5
-    parent: 5447
+    parent: 5460
+    type: Transform
+- uid: 5505
+  type: CableMV
+  components:
+  - pos: -1.5,0.5
+    parent: 5460
+    type: Transform
+- uid: 5506
+  type: CableApcExtension
+  components:
+  - pos: -1.5,1.5
+    parent: 5460
     type: Transform
 ...
